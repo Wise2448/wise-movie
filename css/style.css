@@ -199,7 +199,8 @@ p {
   }
   
   /* Mobile Design*/
- @media(max-width:360px){
+ @media screen (max-width:360px){
+
   nav{
     display:none;
   }
