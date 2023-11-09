@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    color: maroon;
+    background: transparent;
+  }
+  marquee {
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: cursive;
+  }
+  .mov div {
+    margin-bottom: 2cm;
+  }
+  p {
+    color: white;
+    font-size: 0.7cm;
+    line-height: 0;
+  }
+  .button {
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.658);
+    color: white;
+    padding: 10px;
+    border: 0px;
+    height: 1cm;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    margin-right: 7px;
+  }
+  .button:hover {
+    transform: scale(105%);
+    background: maroon;
+    border: double red;
+    color: white;
+  }
+  .txt {
+    height: 1cm;
+    background: transparent;
+    border-top-left-radius: 20%;
+    outline: 0;
+    border: 0;
+    box-shadow: 3px 3px 1px black;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    margin-right: 4px;
+  }
+  .txt:hover {
+    transform: scale(105%);
+  }
+  .txt::placeholder {
+    color: white;
+    font-style: italic;
+    text-align: center;
+  }
+  body {
+    background-image: url(image/roberto-h-qToVxSYXPYU-unsplash.jpg);
+  }
+  

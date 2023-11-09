@@ -1,0 +1,250 @@
+nav{
+  border-bottom: 2px dashed red;
+}
+p {
+    color: white;
+    text-align: center;
+  }
+  div a{
+    color:maroon;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  h2 {
+    color: red;
+  }
+  #head1 {
+    font-size: 60px;
+    margin-top: -0.2cm;
+  }
+  
+  #mov:hover{
+    color: red;
+  }
+  #button {
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.658);
+    color: white;
+    padding: 10px;
+    border: 0px;
+    height: o.8cm;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    font-weight: light;
+  transition-timing-function: ease-in-out;
+  }
+  #button:hover {
+    transform: translateY(-5px);
+    background: maroon;
+    border: double red;
+    color: white;
+  }
+  
+  
+  #place {
+    height: 1cm;
+    width: 7cm;
+    background: transparent;
+    box-shadow:1px 0px 1px grey;
+    border: 0;
+    transition-property: transform;
+    transform: scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+  body{
+    padding-top: 0.5cm;
+  }
+  #place:hover{
+    scale: 110%;
+    transform: translateY(5px);
+  }
+  #place::placeholder{
+    font-style: italic;
+  }
+  #headdiv {
+    justify-content: space-evenly;
+    color: white;
+    display: flex;
+   
+  
+  }
+  
+  nav {
+    background: transparent;
+    padding-top:0.5cm;
+   
+  }
+  header {
+  
+    background-image:url("image/IMG_20230724_154937_427.jpg");
+    line-height: 0;
+  }
+  header h1 {
+    color: grey;
+    font-size: 50px;
+    margin-left: 30px;
+  }
+  #para {
+    color: red;
+    font-size: 20px;
+    margin-left: -1050px;
+  }
+  #movies {
+    margin-left: 2px;
+  }
+  #movies img {
+    height: 300px;
+    min-width: 300px;
+    border-radius: 20px;
+  }
+  #recent {
+    display: flex;
+   overflow-x: auto;
+  }
+  #movies p {
+    text-align: center;
+  }
+  #movie {
+    color: red;
+  }
+  
+  #availh1 {
+    color: red;
+  }
+  
+  
+  #availm {
+    display: flex;
+    height: 320px;
+    padding:1cm;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+   
+  }
+  #availimg {
+    min-width: 300px;
+    height: 290px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+  }
+  #availimg:hover {
+    transform: translatey(-10px);
+    transition-duration: 0.5s;
+    scroll-margin-block-end: 1cm;
+    scale: 105%;
+  }
+  img{
+    transition-property: transform;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: translatey(-10px);
+    transition-duration: 0.1s;
+    scroll-margin-block-end: 1cm;
+    scale: 90%;
+  }
+  #mus {
+    color: red;
+    font-style: italic;
+  }
+  
+  p {
+    color: red;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  #serieimg {
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    margin-right: 0.5cm;
+  }
+  #want {
+    display: flex;
+    margin-bottom: 0.5cm;
+  }
+  #plot {
+    float: right;
+    background: maroon;
+    border-radius: 20px;
+    padding-left: 1cm;
+    width: 30cm;
+    line-height: 15px;
+  }
+  
+  
+  .down{
+    color: white;
+    font-family: cursive;
+    background: rgba(255, 0, 0, 0.658);
+    padding: 0.2cm;
+    border-radius: 30%;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  
+  }
+  .down:hover{
+    transform: scale(105%);
+    transform:translateX(-5cm);
+    background: maroon;
+    border: 4px double red;
+  }
+  .two{
+    display:none;
+  }
+  
+  /* Mobile Design*/
+ @media(max-width:360px){
+  nav{
+    display:none;
+  }
+  .two{
+    position:relative;
+    top:-20px;
+    display:block;
+    color:red;
+    text-align: center;
+  }
+  #mainwrapper {
+text-align: center;
+  }
+  #recent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #movies{
+    padding:0;
+    font-size:15px;
+    position:relative;
+    left:20px;
+  }
+ 
+  #movies img{
+    min-width:120px;
+    height:120px
+  }
+  #availm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: none;
+  }
+  #availimg {
+    min-width:120px;
+    height:120px 
+  }h1{
+    text-align: center;
+    color:rgb(255, 0, 0)
+  }
+  #want{
+    flex-direction:column;
+  }
+  #serieimg{
+    position:relative;
+    left:25px;
+  }
+ }

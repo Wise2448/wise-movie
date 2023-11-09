@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=&gt;, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let age = prompt("How old are you?");
+      if(age<18){
+        alert("Parental Supervision Advised");
+      }
+      else{
+        alert("Welcome");
+      }
+    </script>
+    
+    <style>
+      #p {
+        font-size: 30px;
+        font-weight: bold;
+
+      }
+      body {
+        background-image: url(image/roberto-h-qToVxSYXPYU-unsplash.jpg);
+        
+      }
+      form {
+        border: 0;
+
+        align-items: center;
+        text-align: center;
+        outline: 0;
+
+        padding: 30px;
+        box-shadow: -4px -4px 7px rgb(168, 159, 159),
+          -4px -4px 7px rgb(255, 241, 241);
+        width: 10cm;
+        background: transparent;
+        color: black;
+        transition-property: transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        margin-left: 1cm;
+        margin-top: 0.2cm;
+      }
+      form:hover {
+        transform: translateX(50px);
+      }
+      h2 {
+        font-size: 1cm;
+      }
+      h1 {
+        text-align: center;
+        color: purple;
+        font-size: 1.5cm;
+        margin-bottom: 0;
+      }
+      #btn {
+        color: white;
+        background: red;
+        cursor: pointer;
+        border-radius: 20%;
+        box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.2);
+        transition-property: transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        font-size: 20px;
+        margin-left: 5px;
+        transform: scale(95%);
+        width: 4cm;
+        height: 1cm;
+      }
+      #btn:hover {
+        transform: translateY(-2px);
+        background: maroon;
+
+        font-weight: bolder;
+      }
+      #text {
+        font-size: 1cm;
+        width: 7cm;
+        color: white;
+        background: transparent;
+        box-shadow: -8px -8px 15px rgba(10, 9, 9, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.2);
+        border: 0;
+      }
+      #date {
+        width: 5cm;
+        font-size: 0.8cm;
+        font-style: italic;
+      }
+      p {
+        font-size: 0.5cm;
+      }
+      input:placeholder-shown {
+        font-style: italic;
+      }
+      form {
+        transform: scale(90%);
+      }
+      div {
+        margin-top: -7cm;
+        display: flex;
+        background: transparent;
+        width: 27cm;
+        box-shadow: -4px -4px 7px rgb(168, 159, 159),
+          -4px -4px 7px rgb(255, 241, 241);
+        border: 0;
+        outline: 0;
+        transform: scale(50%);
+        padding: 12px;
+        margin-left: 4cm;
+      }
+
+      #form1:hover {
+        transform: translateX(-50px);
+      }
+      #text2 {
+        background: transparent;
+        box-shadow: -8px -8px 15px rgba(10, 9, 9, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.2);
+        border: 0;
+        color: white;
+        width: 10cm;
+        height: 1cm;
+        font-size: 30px;
+      }
+      select {
+        height: 1cm;
+        font-size: 0.7cm;
+        max-width: max-content;
+      }
+      img {
+        width: 3cm;
+      }
+
+      #x{
+        display:none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <h1>Log in</h1>
+        <p></p>
+        <p id="p"><h2>Wise movie ID</h2></p>
+        <input
+          type="text"
+          id="text2"
+          placeholder="Input text here"
+          title="Input ID "
+        />
+        <p></p>
+        <p id="p"></p>
+        <h2>Password</h2>
+        <input
+          type="password"
+          id="text2"
+          placeholder="Input Password here"
+          title="Input Password"
+        />
+        <p></p>
+        <p id="p"><input type="checkbox" />Remember my ID &amp; Password</p>
+        <p id="p"><input type="checkbox" />Sign in automatically</p>
+        <p id="p"><input type="checkbox" />Sign in as invisible to everyone</p>
+        <p id="p">
+          <input type="submit" id="btn" value="Sign in" />
+        </p>
+        <p id="p">
+          Language: <br />
+          <select>
+            <option>English(UK)</option>
+            <option>English(US)</option>
+            <option>Francais</option>
+            <option>Spain(Barcelona)</option>
+            <option>Spain(Madrid)</option>
+            <option>Spain(Espanyol)</option>
+            <option>Portuguese</option>
+            <option>Igbo</option>
+            <option>Indian</option>
+            <option>Indian(Bangladesh)</option>
+          </select>
+        </p>
+
+        <p id="p">
+          <a href="http://127.0.0.1:5502/yahoo.html?#"
+            >Get a new Yahoo! ID...</a
+          >
+          <br />
+          <br />
+          <a href="http://127.0.0.1:5502/yahoo.html?">Forgot Your Password?</a>
+        </p>
+      </form>
+
+      <form id="form1">
+       
+        <h1>REGISTER</h1>
+        <p id="p">
+          Surname <br />
+          <input
+            type="text"
+            id="text2"
+            placeholder="Input text here"
+            size="40"
+          />
+        </p>
+        <p id="p">
+          First Name <br />
+          <input
+            type="text"
+            size="40"
+            id="text2"
+            placeholder="Input text here"
+          />
+        </p>
+        <p id="p">
+          Last name <br />
+          <input
+            type="text"
+            size="40"
+            id="text2"
+            placeholder="Input text here"
+          />
+        </p>
+        <p id="p">
+          Preferred Username <br />
+          <input
+            type="text"
+            size="40"
+            id="text2"
+            placeholder="Input text here"
+          />
+        </p>
+        <p id="p">
+          Gender <br />
+          <input type="radio" name="rad" size="30" /> Male
+          <input type="radio" name="rad" /> Female
+        </p>
+        <p id="p">
+          Date of Birth <br />
+          <input type="date" id="date" />
+        </p>
+        <p id="p">
+          Phone Number <br />
+          <input
+            type="text"
+            id="text2"
+            placeholder="Input text here"
+            size:40=""
+          />
+        </p>
+        <p id="p">
+          Email Address <br />
+          <input
+            type="text"
+            size="40"
+            id="text2"
+            placeholder="Input text here"
+          />
+        </p>
+        <p id="p">
+          Set Password <br />
+          <input
+            type="password"
+            size="40"
+            id="text2"
+            placeholder="Input password here"
+          />
+        </p>
+        <p id="p">
+          Confirm Password <br />
+          <input
+            type="password"
+            size="40"
+            id="text2"
+            placeholder="password text here"
+          />
+        </p>
+        <p id="p">
+          <input type="submit" value="Register" id="btn" />
+        </p>
+      </form>
+    </div>
+
+  
+    <input type="button" value="touch" onClick="one()">
+
+   
+<p id="x">Try to fil all parameters</p>
+    
+
+    <script src="new.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frequently Asked Questions</title>
+  </head>
+  <script>
+    function man(a, b) {
+      let sum = document.getElementById(a).innerHTML;
+      const show = document.getElementById(b);
+      show.innerHTML = sum;
+      show.style.display = "block";
+    }
+    function man2(a, b) {
+      let sum = document.getElementById(a).innerHTML;
+      const show = document.getElementById(b);
+      show.innerHTML = sum;
+      show.style.display = "none";
+    }
+  </script>
+  <style>
+    body {
+      text-align: center;
+      justify-content: center;
+      background-image: url("image/roberto-h-qToVxSYXPYU-unsplash.jpg");
+    }
+    #homediv {
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      line-height: 1cm;
+      font-size: 20px;
+      color: white;
+    }
+    #but {
+      color: white;
+      background: red;
+      transition-property: transform;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.5s;
+      border-radius: 10px;
+    }
+    #but:hover {
+      background: maroon;
+      transform: scale(110%);
+      border-radius: 0;
+    }
+  </style>
+  <body>
+    <h1>Frequently asked questions</h1>
+
+    <div id="homediv">
+      <ul>
+        <li>
+          Why is my download speed slow?
+
+          <input
+            type="button"
+            id="but"
+            value="Answer"
+            onclick="man('ans1','show')"
+            ondblclick="man2('ans1', 'show')"
+          />
+        </li>
+        <p id="ans1" style="display: none">
+          Its probably because of your network
+        </p>
+        <span style="display: none" id="show"></span>
+        <li>
+          How can i easily sign up to this platform?
+          <input
+            type="button"
+            id="but"
+            value="Answer"
+            onclick="man('ans2','show2')"
+            ondblclick="man2('ans2','show2')"
+          />
+        </li>
+        <p id="ans2" style="display: none">
+          You can do that by clicking on the sign in button located in the
+          homepage of the website <a href="monday.html">"Homepage"</a>
+        </p>
+        <span id="show2" style="display: none"></span>
+        <li>
+          How many years has this website been on?
+
+          <input
+            type="button"
+            id="but"
+            value="Answer"
+            onclick="man('ans3', 'show3')"
+            ondblclick="man2('ans3', 'show3')"
+          />
+        </li>
+        <p id="ans3" style="display: none">
+          The website was created on the 10th of August 2023 and has been
+          subjected to regular upgrades since then
+        </p>
+        <span id="show3" style="display: none"></span>
+
+        <li>
+          Would this website close down like netnaija?
+
+          <input
+            type="button"
+            id="but"
+            value="Answer"
+            onclick="man('ans4', 'show4')"
+            ondblclick="man2('ans4', 'show4')"
+          />
+        </li>
+        <p id="ans4" style="display: none">Definitely not</p>
+        <span id="show4" style="display: none"></span>
+
+        <li>
+          How to download
+
+          <input
+            type="button"
+            id="but"
+            value="Answer"
+            onclick="man('ans5', 'show5')"
+            ondblclick="man2('ans5', 'show5')"
+          />
+        </li>
+        <p id="ans5" style="display: none">
+          You can do that by checking for the desired movie or series you want,
+          then clicking on the download button below it. You can decide to
+          stream the movies/series. you can do that by clicking the Watch now
+          button
+        </p>
+        <span id="show5" style="display: none"></span>
+      </ul>
+    </div>
+  </body>
+</html>
