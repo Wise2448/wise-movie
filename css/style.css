@@ -200,7 +200,7 @@ p {
   
   /* Mobile Design*/
   
-@media screen and (max-width:500px) {
+@media(max-width:500px) {
 
     body{
      font-size:30px;
