@@ -200,13 +200,14 @@ p {
   
   /* Mobile Design*/
   
-@media(max-width:900px) {
+@media(max-width:720px) {
 
     body{
      font-size:30px;
     }
    nav{
      display:none;
+   
    }
    .two{
      position:relative;
